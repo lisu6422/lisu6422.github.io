@@ -1,0 +1,29 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ page.description | default: site.description | smartify }}">
+    <meta name="author" content="{{ site.authors }}">
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+    
+    <title>
+        {%- if page.title -%}
+        {{ page.title }} · {{ site.title }}
+        {%- else -%}
+        {{ site.title }} · {{ site.description }}
+        {%- endif -%}
+    </title>
+    
+    
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/lib/css/font.css"/>-->
+    <!--    Core CSS    -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/lib/css/material-dashboard.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/lib/css/demo.css"/>
+    
+    <!-- Documentation extras -->
+    {% if page.layout == "docs" or page.layout =="book" or page.layout == "books" %}
+    <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+    {% endif %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>

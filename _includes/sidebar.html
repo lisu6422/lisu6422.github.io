@@ -1,0 +1,211 @@
+<div class="sidebar" data-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+    <!--
+Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+Tip 2: you can also add an image using data-image tag
+-->
+
+    <div class="sidebar-wrapper">
+
+        <div class="user">
+            <div class="photo">
+                <img src="/assets/img/faces/avatar.jpg">
+            </div>
+            <div class="user-info">
+                <a class="username">Li Su</a>
+            </div>
+        </div>
+
+        <!--导航菜单-->
+
+<ul class="nav">
+
+    <!--取 page 的文件名 name ，不包含文件的类型扩展部分 -->
+    {%- assign page_name = page.name | remove: '.html' | remove: '.md' -%}
+    {%- assign page_path = '/' -%}
+
+
+    <!-- blog 目录下的文章 -->
+    {% if page.book == 'terminal' %}
+    <!-- books/terminal 目录下的文章 -->
+    {%- assign groups = site.data.book-terminal -%}
+    {%- assign page_path = '/books/terminal' -%}
+
+    {% endif %}
+
+
+    {% if page.book == 'refactor' %}
+    <!-- books/refactor 目录下的文章 -->
+    {%- assign groups = site.data.book-refactor -%}
+    {%- assign page_path = '/books/refactor' -%}
+
+    {% endif %}
+
+    {% for group in groups %}
+    {% if group.items != null %}
+    <!-- 一级菜单含有子菜单 -->
+    {%- assign subgroups = group.items -%}
+    <li class="nav-item {% if page.group == group.id  %} active {% endif %}">
+        <a class="nav-link" data-toggle="collapse" href="#{{ group.id }}group">
+            <i class="material-icons">{{ group.icon }}</i>
+            <p> {{ group.name }}<b class="caret"></b></p>
+        </a>
+        <!--二级菜单-->
+        <div class="collapse {% if page.group == group.id  %} show {% endif %}" id="{{ group.id }}group">
+            <ul class="nav">
+                {% for subgroup in subgroups %}
+                {% if subgroup.items != null %}
+                <!-- 二级菜单含有子菜单-->
+
+                <li class="nav-item {% if page.group == group.id and page.subgroup == subgroup.id  %} active {% endif %}">
+                    <a class="nav-link collapsed" data-toggle="collapse" href="#{{ subgroup.id }}subgroup"
+                       aria-expanded="false">
+                        <span class="sidebar-mini">{{ subgroup.mini }}</span>
+                        <span class="sidebar-normal">{{ subgroup.name }}<b class="caret"></b></span>
+
+
+                    </a>
+                    <div class="collapse {% if page.group == group.id and page.subgroup == subgroup.id %} show {% endif %}"
+                         id="{{ subgroup.id }}subgroup">
+                        <ul class="nav">
+                            {% for item in subgroup.items %}
+
+                            {% if page.group == group.id and page.subgroup == subgroup.id and page_name ==item.id %}
+                            {%- assign active = true -%}
+                            {% else %}
+                            {%- assign active = false -%}
+                            {% endif %}
+
+                            <!-- 构建 link -->
+                            {% if active %}
+                            {%- assign link = '#' -%}
+                            {% else %}
+
+                            {%- if item.link == null -%}
+                            {%- assign link = page_path | append: '/' | append: group.id | append: '/' | append:
+                            subgroup.id | append: '/' | append: item.id | append: '.html'-%}
+                            {% else %}
+                            {%- assign link = item.link | append: '.html' -%}
+                            {% endif %}
+
+                            {% endif %}
+
+
+
+                            <li class="nav-item {% if active  %} active {% endif %}">
+                                <a class="nav-link"
+                                   href="{{ link }}">
+                                    <span class="sidebar-mini">{{ item.mini }} </span>
+                                    <span class="sidebar-normal">{{ item.name }}</span>
+                                </a>
+                            </li>
+
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </li>
+                {% else %}
+                <!-- 二级菜单没有子菜单 -->
+
+                {% if page.subgroup == null %}
+
+                <!-- 页面没有配置 subgroup -->
+                {% if page_name == subgroup.id %}
+                {%- assign active = true -%}
+                {% else %}
+                {%- assign active = false -%}
+                {% endif %}
+
+                {% else %}
+
+                <!-- 页面配置 subgroup -->
+                {% if page.subgroup == subgroup.id %}
+                {%- assign active = true -%}
+                {% else %}
+                {%- assign active = false -%}
+                {% endif %}
+
+                {% endif %}
+
+                <!-- 构建 link -->
+                {% if active %}
+                {%- assign link = '#' -%}
+                {% else %}
+
+                {%- if subgroup.link == null -%}
+                {%- assign link = page_path | append: '/' | append: group.id | append: '/' | append: subgroup.id |
+                append: '.html' -%}
+                {% else %}
+                {%- assign link = subgroup.link | append: '.html' -%}
+                {% endif %}
+
+                {% endif %}
+
+
+                <li class="nav-item {% if active  %} active {% endif %}">
+                    <a class="nav-link"
+                       href="{{ link }}">
+                        <span class="sidebar-mini">{{ subgroup.mini }}</span>
+                        <span class="sidebar-normal">{{ subgroup.name }}</span>
+
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </li>
+    {% else %}
+    <!-- 一级菜单没有子菜单 -->
+
+    {% if page.group == null %}
+    <!--页面没有配置 group -->
+    {% if page_name == group.id %}
+
+    {%- assign active = true -%}
+    {% else %}
+    {%- assign active = false -%}
+    {% endif %}
+
+    {% else %}
+
+    <!-- 页面配置了 group -->
+    {% if page.group == group.id %}
+
+    {%- assign active = true -%}
+    {% else %}
+    {%- assign active = false -%}
+    {% endif %}
+
+    {% endif %}
+
+
+    <li class="nav-item {% if active  %} active {% endif %}">
+
+        <!-- 构建 link -->
+        {% if active %}
+        {%- assign link = '#' -%}
+        {% else %}
+
+        {%- if group.link == null -%}
+        {%- assign link = page_path | append: '/' | append: group.id | append: '.html' -%}
+        {% else %}
+        {%- assign link = group.link | append: '.html' -%}
+        {% endif %}
+
+        {% endif %}
+
+        <a class="nav-link" href="{{ link }}">
+            <i class="material-icons">{{ group.icon }}</i>
+            <p> {{ group.name }} </p>
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+
+
+    </div>
+    <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div>
+</div>

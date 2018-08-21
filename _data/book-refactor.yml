@@ -1,0 +1,17 @@
+# 重构-改善既有代码的设计
+
+- id: index
+  name: README
+  icon: view_list
+- id: refactor-list
+  name: 重构手法
+  icon: view_list
+#  重新组织函数
+- id: composing-methods
+  name: 重新组织函数
+  icon: keyboard
+  items:
+  - id: extract-method
+    name: Extract Method（提炼函数）
+    subname: Extract Method（提炼函数）
+    mini: 1

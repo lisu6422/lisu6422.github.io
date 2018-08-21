@@ -1,0 +1,10 @@
+.float-block {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 2em;
+}
+
+.content a {
+    cursor: pointer !important;
+}
