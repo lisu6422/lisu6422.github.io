@@ -3,15 +3,24 @@
 - id: index
   name: README
   icon: view_list
-- id: refactor-list
-  name: 重构手法
+- id: bad-taste
+  name: 代码的坏味道
   icon: view_list
+  items:
+  - id: duplicated-code
+    name: Duplicated Code（重复代码）
+    subname: Duplicated Code（重复代码）
+    mini: 1
 #  重新组织函数
 - id: composing-methods
   name: 重新组织函数
-  icon: keyboard
+  icon: view_list
   items:
   - id: extract-method
     name: Extract Method（提炼函数）
     subname: Extract Method（提炼函数）
     mini: 1
+  - id: inline-method
+    name: Inline Method（内联函数）
+    subname: Inline Method（内联函数）
+    mini: 2
