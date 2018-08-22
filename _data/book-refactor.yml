@@ -6,11 +6,7 @@
 - id: bad-taste
   name: 代码的坏味道
   icon: view_list
-  items:
-  - id: duplicated-code
-    name: Duplicated Code（重复代码）
-    subname: Duplicated Code（重复代码）
-    mini: 1
+
 #  重新组织函数
 - id: composing-methods
   name: 重新组织函数
@@ -24,3 +20,7 @@
     name: Inline Method（内联函数）
     subname: Inline Method（内联函数）
     mini: 2
+  - id: inline-temp
+    name: Inline Temp（内联临时变量）
+    subname: Inline Temp（内联临时变量）
+    mini: 3

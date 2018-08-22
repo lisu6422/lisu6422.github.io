@@ -3,6 +3,7 @@ layout: book
 title: Extract Method（提炼函数）
 book: refactor
 group: composing-methods
+next: inline-method
 ---
 
 ## What
