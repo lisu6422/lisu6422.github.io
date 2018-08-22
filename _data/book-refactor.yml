@@ -3,7 +3,7 @@
 - id: index
   name: README
   icon: view_list
-- id: bad-taste
+- id: bad-smell
   name: 代码的坏味道
   icon: view_list
 
