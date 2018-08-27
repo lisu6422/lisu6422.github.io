@@ -81,3 +81,56 @@
   - id: introduce-local-extension
     name: Introduce Local Extension（引入本地扩展）
     mini: 8
+# 重新组织数据
+- id: organizing-data
+  name: 重新组织数据
+  icon: keyboard
+  items:
+  - id: self-encapsulate-field
+    name: 自封装字段
+    mini: 1
+  - id: replace-data-value-with-object
+    name: 以对象取代数据值
+    mini: 2
+  - id: change-value-to-reference
+    name: 将值对象改为引用对象
+    mini: 3
+  - id: change-reference-to-value
+    name: 将引用对象改为值对象
+    mini: 4
+  - id: replace-array-with-object
+    name: 以对象取代数组
+    mini: 5
+  - id: duplicate-observed-data
+    name: 复制"被监视数据"
+    mini: 6
+  - id: change-unidirectional-association-to-bidirectional
+    name: 将单向关联改为双向关联
+    mini: 7
+  - id: change-bidirectional-association-to-unidirectional
+    name: 将双向关联改为单向关联
+    mini: 8
+  - id: replace-magic-number-with-symbolic-constant
+    name: 以字面量取代魔法数
+    mini: 9
+  - id: encapsulate-field
+    name: 封装字段
+    mini: 10
+  - id: encapsulate-collection
+    name: 封装集合
+    mini: 11
+  - id: replace-record-with-data-class
+    name: 以数据类取代记录
+    mini: 12
+  - id: replace-type-code-with-class
+    name: 以类取代类型码
+    mini: 13
+  - id: replace-type-code-with-subclasses
+    name: 以子类取代类型码
+    mini: 14
+  - id: replace-type-code-with-state-or-strategy
+    name: 以State/Strategy取代类型码
+    mini: 15
+  - id: replace-subclass-with-fields
+    name: 以字段取代子类
+    mini: 16
