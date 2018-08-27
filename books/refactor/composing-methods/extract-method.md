@@ -3,7 +3,6 @@ layout: book
 title: Extract Method（提炼函数）
 book: refactor
 group: composing-methods
-next: inline-method
 ---
 
 ## What
@@ -267,9 +266,9 @@ void printOwing(double previousAmount){
 
 有几种选择。最好的选择通常是：挑选另一块代码来提炼，因为函数一般都只能返回一个值，所以会提炼多个函数，用以返回多个值。如果所使用的语言支持”**出参数（output parameter）**“（如`lua`），可以使用它们带回多个回传值。但是，最好还是发送可能选择单一返回值。
 
-临时变量往往较多，甚至会使提s炼工作举步维艰。这种情况下，可以尝试先运用**[Replace Temp with Query](replace-temp-with-query.md)**减少临时变量。如果即使这么做了提炼依旧困难重重，那么就动用**[Replace Method with Method Object](replace-method-with-method-object)**，这个重构手法不在乎代码中有多少临时变量，也不在乎如何使用它们。
+临时变量往往较多，甚至会使提s炼工作举步维艰。这种情况下，可以尝试先运用**[Replace Temp with Query](replace-temp-with-query.html)**减少临时变量。如果即使这么做了提炼依旧困难重重，那么就动用**[Replace Method with Method Object](replace-method-with-method-object.html)**，这个重构手法不在乎代码中有多少临时变量，也不在乎如何使用它们。
 
 
 ## 下一篇
 
-* [Inline Method(内联函数)](inline-method.md)
+* [Inline Method(内联函数)](inline-method.html)

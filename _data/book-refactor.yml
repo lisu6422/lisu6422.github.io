@@ -28,3 +28,56 @@
     name: Replace Temp with Query（以查询取代临时变量）
     subname: Replace Temp with Query（以查询取代临时变量）
     mini: 4
+  - id: introduce-explaining-variable
+    name: Introduce Explaining Variable（引入解释性变量）
+    subname: Introduce Explaining Variable（引入解释性变量）
+    mini: 5
+  - id: split-temporary-variable
+    name: Split Temporary Variable（分解临时变量）
+    subname: Split Temporary Variable（分解临时变量）
+    mini: 6
+  - id: remove-assignments-to-parameters
+    name: Remove Assignments to Parameters（移除对参数的赋值）
+    subname: Remove Assignments to Parameters（移除对参数的赋值）
+    mini: 7
+  - id: replace-method-with-method-object
+    name: Replace Method with Method Object（以函数对象取代函数）
+    subname: Replace Method with Method Object（以函数对象取代函数）
+    mini: 8
+  - id: substitute-algorithm
+    name: Substitute Algorithm（替换算法）
+    subname: Substitute Algorithm（替换算法）
+    mini: 9
+
+#  在对象之间搬移特性
+- id: moving-features-between-objects
+  name: 在对象之间搬移特性
+  icon: view_list
+  items:
+  - id: move-method
+    name: Move Method（搬移函数）
+    subname: Move Method（搬移函数）
+    mini: 1
+  - id: move-field
+    name: Move Field（搬移字段）
+    subname: Move Field（搬移字段）
+    mini: 2
+  - id: extract-class
+    name: Extract Class（提炼类）
+    subname: Extract Class（提炼类）
+    mini: 3
+  - id: inline-class
+    name: Inline Class（将类内联化）
+    mini: 4
+  - id: hide-delegate
+    name: Hide Delegate（隐藏"委托关系"）
+    mini: 5
+  - id: remove-middle-man
+    name: Remove Middle Man（移除中间人）
+    mini: 6
+  - id: introduce-foreign-method
+    name: Introduce Foreign Method（引入外加函数）
+    mini: 7
+  - id: introduce-local-extension
+    name: Introduce Local Extension（引入本地扩展）
+    mini: 8

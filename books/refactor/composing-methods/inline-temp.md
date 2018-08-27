@@ -30,11 +30,11 @@ return anOrder.basePrice() > 1000;
 
 ## Why
 
-**Inline Temp**多半是作为**[Replace Temp with Query](replace-temp-with-query.md)**的一部分使用的，所以真正的动机出现在后者那儿。
+**Inline Temp**多半是作为**[Replace Temp with Query](replace-temp-with-query.html)**的一部分使用的，所以真正的动机出现在后者那儿。
 
 唯一单独使用**Inline Temp**的情况是：你发现某个临时变量被赋予某个函数调用的返回值。
 
-一般来说，这样的临时变量不会有任何危害，可以放心地把它留在那儿。但如果这个临时变量防碍了其他的重构手法，例如**[Extract Method](extract-method.md)**，你就应该将它内联化。
+一般来说，这样的临时变量不会有任何危害，可以放心地把它留在那儿。但如果这个临时变量防碍了其他的重构手法，例如**[Extract Method](extract-method.html)**，你就应该将它内联化。
 
 ## How
 
@@ -54,4 +54,4 @@ return anOrder.basePrice() > 1000;
 
 ## 关联阅读
 
-* [Introduce explaining variable:(引入解释性变量)](introduce-explaining-variable.md)
+* [Introduce explaining variable:(引入解释性变量)](introduce-explaining-variable.html)

@@ -64,4 +64,4 @@ ps：**Inline Method**看起来似乎很简单，但情况往往并非如此。�
 
 ## 下一篇
 
-* [Inline Temp(内联临时变量)](inline-temp.md)
+* [Inline Temp(内联临时变量)](inline-temp.html)
