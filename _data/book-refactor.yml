@@ -134,3 +134,32 @@
   - id: replace-subclass-with-fields
     name: 以字段取代子类
     mini: 16
+#简化条件表达式
+- id: simplifying-data
+  name: 简化条件表达式
+  icon: keyboard
+  items:
+  - id: decompose-conditional
+    name: 分解条件表达式
+    mini: 1
+  - id: consolidate-conditional-expression
+    name: 合并条件表达式
+    mini: 2
+  - id: consolidate-duplicate-conditional-fragments
+    name: 合并重复的条件片段
+    mini: 3
+  - id: remove-control-flag
+    name: 移除控制标记
+    mini: 4
+  - id: replace-nested-conditional-with-guard-clauses
+    name: 以卫语句取代嵌套条件表达式
+    mini: 5
+  - id: replace-conditional-with-polymorphism
+    name: 以多态取代条件表达式
+    mini: 6
+  - id: introduce-null-object
+    name: 引入Null对象
+    mini: 7
+  - id: introduce-assertion
+    name: 引入断言
+    mini: 8
