@@ -163,3 +163,52 @@
   - id: introduce-assertion
     name: 引入断言
     mini: 8
+- id: making-method-calls-simpler
+  name: 简化函数调用
+  icon: keyboard
+  items:
+  - id: rename-method
+    name: 函数改名
+    mini: 1
+  - id: add-paramter
+    name: 添加参数
+    mini: 2
+  - id: remove-parameter
+    name: 移除参数
+    mini: 3
+  - id: separate-query-from-modifier
+    name: 将查询函数和修改函数分离
+    mini: 4
+  - id: parameterize-method
+    name: 令函数携带参数
+    mini: 5
+  - id: replace-parameter-with-explicit-methods
+    name: 以明确函数取代参数
+    mini: 6
+  - id: preserve-whole-object
+    name: 保持对象完整
+    mini: 7
+  - id: replace-parameter-with-methods
+    name: 以函数取代参数
+    mini: 8
+  - id: introduce-parameter-object
+    name: 引入参数对象
+    mini: 9
+  - id: remove-setting-method
+    name: 移除设值函数
+    mini: 10
+  - id: hide-method
+    name: 隐藏函数
+    mini: 11
+  - id: replace-constructor-with-factory-method
+    name: 以工厂函数取代构造函数
+    mini: 12
+  - id: encapsulate-downcast
+    name: 封装向下转型
+    mini: 13
+  - id: replace-error-code-with-exception
+    name: 以异常取代错误码
+    mini: 14
+  - id: replace-exception-with-test
+    name: 以测试取代异常
+    mini: 15
