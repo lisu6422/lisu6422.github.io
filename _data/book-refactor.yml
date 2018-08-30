@@ -212,3 +212,43 @@
   - id: replace-exception-with-test
     name: 以测试取代异常
     mini: 15
+- id: dealing-with-generalization
+  name: 处理概括关系
+  icon: keyboard
+  items:
+  - id: pull-up-field
+    name: 字段上移
+    mini: 1
+  - id: pull-up-method
+    name: 函数上移
+    mini: 2
+  - id: pull-up-constructor-body
+    name: 构造函数本体上移
+    mini: 3
+  - id: push-down-method
+    name: 函数下移
+    mini: 4
+  - id: push-down-field
+    name: 字段下移
+    mini: 5
+  - id: extract-subclass
+    name: 提炼子类
+    mini: 6
+  - id: extract-superclass
+    name: 提炼超类
+    mini: 7
+  - id: extract-interface
+    name: 提炼接口
+    mini: 8
+  - id: collapse-hierarchy
+    name: 折叠继承体系
+    mini: 9
+  - id: form-template-method
+    name: 塑造模板函数
+    mini: 10
+  - id: replace-inheritance-with-delegation
+    name: 以委托取代继承
+    mini: 11
+  - id: replace-delegation-with-inheritance
+    name: 以继承取代委托
+    mini: 12
