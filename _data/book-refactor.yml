@@ -252,3 +252,11 @@
   - id: replace-delegation-with-inheritance
     name: 以继承取代委托
     mini: 12
+- id: big-refactorings
+  name: 大型重构
+  icon: keyboard
+  items:
+  - id: tease-apart-interitance
+    name: 梳理并分解继承体系
+    mini: 1
+ 
