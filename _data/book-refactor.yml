@@ -259,4 +259,13 @@
   - id: tease-apart-interitance
     name: 梳理并分解继承体系
     mini: 1
+  - id: convert-procedural-design-to-objects
+    name: 将过程化设计转化为对象设计
+    mini: 2
+  - id: separate-domain-from-presentation
+    name: 将领域和静态/显示分离
+    mini: 3
+  - id: extract-hierarchy
+    name: 提炼继承体系
+    mini: 4
  
