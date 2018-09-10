@@ -41,6 +41,13 @@ Tip 2: you can also add an image using data-image tag
 
     {% endif %}
 
+    {% if page.java == 'basic' %}
+    <!-- java/basic 目录下的文章 -->
+    {%- assign groups = site.data.java-basic -%}
+    {%- assign page_path = '/java/basic' -%}
+
+    {% endif %}
+
     {% for group in groups %}
     {% if group.items != null %}
     <!-- 一级菜单含有子菜单 -->
