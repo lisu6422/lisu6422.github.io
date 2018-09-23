@@ -21,6 +21,11 @@
         strong {
             color: #e91e63;
         }
+
+        .bd-content h1, .bd-content h2 {
+            font-weight: 400 !important;
+            margin-bottom: 40px;
+        }
         
         .bd-content > p {
             text-indent: 2em
@@ -48,7 +53,7 @@
     <div class="main-panel">
         {% include navbar.html %}
        
-        <div class="content">
+        <div class="content bd-content">
             <div class="card">
                 <div class="container-fluid">
                             {{ content }}

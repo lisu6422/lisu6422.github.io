@@ -45,6 +45,12 @@ Tip 2: you can also add an image using data-image tag
     <!-- java/basic 目录下的文章 -->
     {%- assign groups = site.data.java-basic -%}
     {%- assign page_path = '/java/basic' -%}
+    {% endif %}
+
+    {% if page.english == 'leaning' %}
+    <!-- english/leaning 目录下的文章 -->
+    {%- assign groups = site.data.english-leaning -%}
+    {%- assign page_path = '/english/leaning' -%}
 
     {% endif %}
 

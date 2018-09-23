@@ -1,0 +1,12 @@
+- id: index
+  name: README
+  icon: view_list
+
+- id: vocabulary
+  name: 词汇
+  icon: view_list
+  items:
+  - id: vocabulary
+    name: 词汇速记
+    subname: 词汇速记
+    mini: 1
