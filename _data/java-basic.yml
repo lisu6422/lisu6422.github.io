@@ -18,3 +18,16 @@
     name: Stream流的使用
     subname: Stream流的使用
     mini: 1
+
+- id: inheritance
+  name: 继承
+  icon: view_list
+  items:
+  - id: variableparameter
+    name: 可变参数
+    subname: 可变参数
+    mini: 1
+  - id: enum
+    name: 枚举类
+    subname: 枚举类
+    mini: 2
