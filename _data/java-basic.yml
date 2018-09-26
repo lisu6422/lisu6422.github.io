@@ -31,3 +31,12 @@
     name: 枚举类
     subname: 枚举类
     mini: 2
+
+- id: interfacelambdaInlineClass
+  name: 接口、lambda表达式、内部类
+  icon: view_list
+  items:
+  - id: interface
+    name: 接口
+    subname: 接口
+    mini: 1
