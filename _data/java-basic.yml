@@ -32,7 +32,7 @@
     subname: 枚举类
     mini: 2
 
-- id: interfacelambdaInlineClass
+- id: interfacelambdainlineclass
   name: 接口、lambda表达式、内部类
   icon: view_list
   items:
@@ -40,3 +40,7 @@
     name: 接口
     subname: 接口
     mini: 1
+  - id: lambda
+    name: lambda表达式
+    subname: lambda表达式
+    mini: 2
