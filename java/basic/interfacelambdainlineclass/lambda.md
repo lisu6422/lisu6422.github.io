@@ -90,7 +90,7 @@ public class LambdaPractice {
 
 ```java
 Arrays .sort (words ,
-(first, second) -> first.lengthO - second.lengthO);
+(first, second) -> first.length() - second.length());
 ```
 
 在底层，Arrays.sort方法会接收实现了Comparator<String>接口的某个类的对象，在这个对象上调用compare方法会执行lambda表达式的方法体。 这些对象和类的管理完全取决于具体实现。（把lambda表达式看作是一个函数，而不是一个对象，lambda表达式可以传递到函数式接口）
@@ -140,7 +140,7 @@ List<Person> people = stream.col1ect(Col1ectors.toList());
 
 * 可以用数组类型建立构造器引用。 例如，`int[]::new`是一个构造器引用，它有一个参数：即数组的长度。这等价于lambda表达式`x -> new int[x]`。
 
-* 但是，Java有一个限制，无法构造泛型类型T的数组。表达式`new T[n]`会产生错误，因为这会改为`new Object[n]`。 
+* 但是，Java有一个限制，无法构造泛型类型T的数组。
 
 * 例如，假设我们需要一个Person对象数组。Stream接口有一个toArray方法可以返回Object数组：
 
