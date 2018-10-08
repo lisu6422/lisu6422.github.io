@@ -1733,121 +1733,339 @@ dis-                                         trans-
 ### 9. -fac(t)- = -fec(t)- = -fic(t)- 做
 
 
-【词源】① 来源于拉丁语facere做，同英语make/do相同，属于一个非常重要的词，因为“做”在日常生活中无处不在。亦来源于拉丁动名词factum = thing done做过的事情。② 来源于拉丁语fingere用手指捏制成形，它们属于一对同源异形词根，前者是此词的不定式词干，后者是此词的动名词词干。
-【引申】形成/形状/塑造/假装/构造/虚构/成形/做/制作/创造
+【词源】
+
+> ① 来源于拉丁语facere做，同英语make/do相同，属于一个非常重要的词，因为“做”在日常生活中无处不在。亦来源于拉丁动名词factum = thing done做过的事情。
+
+> ② 来源于拉丁语fingere用手指捏制成形，它们属于一对同源异形词根，前者是此词的不定式词干，后者是此词的动名词词干。
+
+
+【引申】
+> 形成/形状/塑造/假装/构造/虚构/成形/做/制作/创造
+
+
 【前缀】
- 
-bene-
-male-
-per-
-e??-
-in-
-a??-
-un-
-dis-
-co-
-o??-
-non-
-suf-
+```
+bene-                         un-
+male-                         dis-
+per-                          co-
+e??-                          o??-
+in-                           non-
+a??-                          suf-
 self-
- 
+```
+
  
 【后缀】
- 
--al
--ly
--ity
--ory
--or = -er
--ive
--ion
--ism
--ist
--ic
--ness
--less
--ing
--ed
--ous
--ant = -ent
--e
--dom
--ency
--ize
--ate
- 
-fact [fækt] n. 事实；实际；真相【词频235】
-factory ['fæktəri] n. 工厂；制造厂；代理店【词频2145】
-benefactor ['benifæktə] n. 施恩者，恩人，捐助者【词频14119】
-malefactor ['mælifæktə] n. 作恶者，坏分子，犯罪分子【词频35205】
-factual ['fæktʃʊəl] adj. 实际的，事实的，确实的【词频9158】【X6M1】
-factually ['fæktʃuəli] adv. 真实地；确实地【词频23734】
-factuality [,fæktʃʊ'æləti] n. 实在性；事实性【词频46173】
-perfect [ˈpəːfɪkt; (for v.) pəˈfekt] adj. 完美的；最好的；精通的 vt. 使完美；使熟练 
-n. 完成式【词频1161，7867，31842】
-perfective [pə'fektɪv] adj. 完成的；完成式的 n. 完成式；完成式的动词【词频57956】
-perfectly ['pɜːfɪk(t)lɪ] adv. 完美地；完全地【词频2451】
-perfection [pə'fekʃ(ə)n] n. 完善；完美【词频6598】
-perfectionism [pə'fekʃ(ə)nɪz(ə)m] n. 至善论；十全十美主义【词频15940】
-perfectionist [pə'fekʃ(ə)nɪst] n. 完美主义者，追求完美的人；至善论者【词频15973】
-perfectionistic [pə'fekʃ(ə)nɪstɪk] adj. 完美主义的【词频39305】
-effect [ɪ'fekt] n. 影响；效果；作用 vt. 产生；达到目的【词频427，7349】
-effective [ɪ'fektɪv] adj. 有效的，起作用的；实际的，实在的；给人深刻印象【词频1134】
-effectively [ɪ'fektɪvlɪ] adv. 有效地，生效地；有力地；实际上【词频2582】
-effectiveness [ɪ'fektɪvnɪs] n. 效力【词频3569】
-ineffective [ɪnɪ'fektɪv] adj. 无效的，失效的；不起作用的【词频8009】
-ineffectively [ɪnɪ'fektɪvlɪ] adv. 无效地；无用地；无能地【词频40575】
-ineffectiveness [,ɪnə'fɛktɪvnɪs] n. 无效；不起作用【词频26150】
-affect [ə'fekt] vt. 影响；感染；感动；假装 vi. 倾向；喜欢 n. 情感；引起感情的因素【词频964，7745】
-affecting [ə'fektɪŋ] adj. 动人的；感人的【词频31381】
-affected [ə'fektɪd] adj. 受到影响的；做作的；假装的【词频9205】
-affectless [ə'fektlis] adj. 冷酷无情的；缺乏感情的【词频48904】
-unaffected [ʌnə'fektɪd] adj. 不受影响的；自然的；真挚的；不矫揉造作的【词频13543】
-affection [ə'fekʃ(ə)n] n. 喜爱，感情；影响；感染【词频5191】
-affectional [ə'fɛkʃənəl] adj. 情感上的；爱情的【词频50231】
-affective [ə'fektɪv] adj. 情感的；表达感情的【词频8778】
-affectively [ə'fektɪvlɪ] adv. 情感地【词频39277】
-infect [ɪn'fekt] vt. 感染，传染【词频5255】
-infected [ɪn'fektɪd] adj. 被感染的【词频8246】
-uninfected [ˌʌnɪnˈfɛktɪd] adj. 未感染的【词频32743】
-infection [ɪn'fekʃ(ə)n] n. 感染；传染；影响；传染病【词频2708】
-coinfection [kəu-ɪn'fekʃ(ə)n] n. 同时感染；共感染【词频53916】
-infective [ɪn'fektɪv] adj. 有传染性的，感染别人的【词频40232】
-infectious [ɪn'fekʃəs] adj. 传染的；传染性的；易传染的【词频7203】
-infectiously [in'fekʃəsli] adv. 传染地；有感染力地【词频49816】
-disinfect [dɪsɪn'fekt] vt. 将…消毒【词频22314】
-disinfection [,dɪsɪn'fekʃən] n. 消毒，杀菌【词频22658】
-disinfectant [dɪsɪn'fekt(ə)nt] n. 消毒剂 adj. 消毒的【词频17980】
-office ['ɒfɪs] n. 办公室；政府机关；官职；营业处【词频341】
-officer ['ɒfɪsə] n. 军官，警官；公务员，政府官员；船长 vt. 指挥【词频671】
-official [ə'fɪʃ(ə)l] adj. 官方的；正式的；公务的 n. 官员；公务员；高级职员【词频526，1842】
-officialism [ə'fɪʃəlɪzəm] n. 官僚作风；文牍主义；（总称）官员
-officially [ə'fɪʃəlɪ] adv. 正式地；官方地；作为公务员【词频4107】
-officialdom [ə'fɪʃəldəm] n. 官场；官员（总称）；官僚作风【词频29635】
-unofficial [,ʌnə'fɪʃl] adj. 非官方的；非正式的【词频9454】
-unofficially [,ʌnə'fɪʃəli] adv. 非正式地；非公认地【词频22298】
-officemate [ə'fɪʃəsmeɪt] n. 办公伙伴 办公室恋情【词频58337】
-efficient [ɪ'fɪʃ(ə)nt] adj. 有效率的；有能力的；生效的【词频3017】
-efficiently [ɪ'fɪʃəntli] adv. 有效地；效率高地（efficient的副词形式）【词频6444】
-efficiency [ɪ'fɪʃ(ə)nsɪ] n. 效率；效能；功效【词频3066】
-inefficient [ɪnɪ'fɪʃ(ə)nt] adj. 无效率的，效率低的；无能的【词频9860】
-inefficiently [ɪnə'fɪʃəntli] adv. 无效率地；缺乏能力地【词频34794】
-inefficiency [,ɪnɪ'fɪʃənsɪ] n. 效率低；无效率；无能【词频13753】
-fiction ['fikʃən] n. 小说；虚构，编造；谎言；虚构或幻想出来的事【词频2779】【B5M3】
-fictionist ['fikʃənist] n. 小说家；创作家
-fictive ['fiktiv] adj. 虚构的；想象上的；虚伪的【词频21125】
-fictional ['fikʃənl] adj. 虚构的；小说的【词频6430】
-fictionally ['fɪkʃənəli] adv. 编造地，杜撰地【词频58224】
-fictionalize ['fikʃənəlaiz] vt. 使小说化；把…编成小说【词频31401】
-fictionalized ['fikʃənəlaizd] adj. 小说化的【词频29633】
-fictionalization [,fɪkʃənəlɪ'zeʃən] n. 小说化【词频57171】
-nonfiction [nɒn'fɪkʃən] n. 非小说的散文文学【词频10907】
-non-fictional [nɒn-'fikʃənl] adj. 非虚构的【词频36276】
-suffice [sə'faɪs] vt. 使满足；足够…用；合格 vi. 足够；有能力【词频9493】
-sufficient [sə'fɪʃ(ə)nt] adj. 足够的；充分的【词频3118】
-sufficiently [sə'fɪʃəntlɪ] adv. 充分地；足够地【词频6028】
-self-sufficient ['selfsə'fiʃənt] adj. 自给自足的；极为自负的；过于自信的【词频13086】
-sufficiency [sə'fɪʃ(ə)nsɪ] n. 足量，充足；自满【词频27020】
+
+
+```
+-al                     -less
+-ly                     -ing  
+-ity                    -ed  
+-ory                    -ous   
+-or =  -er              -ant = -ent   
+-ive                    -e   
+-ion                    -dom   
+-ism                    -ency   
+-ist                    -ize   
+-ic                     -ate  
+-ness   
+```
+
+
+
+fact [fækt] 
+- n. 事实；实际；真相
+
+
+factory ['fæktəri] 
+- n. 工厂；制造厂；代理店
+
+
+benefactor ['benifæktə] 
+- n. 施恩者，恩人，捐助者
+
+
+malefactor ['mælifæktə] 
+- n. 作恶者，坏分子，犯罪分子
+
+
+factual ['fæktʃʊəl] 
+- adj. 实际的，事实的，确实的
+
+
+factually ['fæktʃuəli] 
+- adv. 真实地；确实地
+
+
+factuality [,fæktʃʊ'æləti] 
+- n. 实在性；事实性
+
+
+perfect [ˈpəːfɪkt; (for v.) pəˈfekt] 
+- adj. 完美的；最好的；精通的 
+- vt. 使完美；使熟练 
+- n. 完成式
+
+
+perfective [pə'fektɪv] 
+- adj. 完成的；完成式的 
+- n. 完成式；完成式的动词
+
+
+perfectly ['pɜːfɪk(t)lɪ] 
+- adv. 完美地；完全地
+
+
+perfection [pə'fekʃ(ə)n] 
+- n. 完善；完美
+
+
+perfectionism [pə'fekʃ(ə)nɪz(ə)m] 
+- n. 至善论；十全十美主义
+
+
+perfectionist [pə'fekʃ(ə)nɪst] 
+- n. 完美主义者，追求完美的人；至善论者
+
+
+perfectionistic [pə'fekʃ(ə)nɪstɪk] 
+- adj. 完美主义的
+
+
+effect [ɪ'fekt] 
+- n. 影响；效果；作用 
+- vt. 产生；达到目的
+
+
+effective [ɪ'fektɪv] 
+- adj. 有效的，起作用的；实际的，实在的；给人深刻印象
+
+
+effectively [ɪ'fektɪvlɪ] 
+- adv. 有效地，生效地；有力地；实际上
+
+
+effectiveness [ɪ'fektɪvnɪs] 
+- n. 效力
+
+
+ineffective [ɪnɪ'fektɪv] 
+- adj. 无效的，失效的；不起作用的
+
+
+ineffectively [ɪnɪ'fektɪvlɪ] 
+- adv. 无效地；无用地；无能地
+
+
+ineffectiveness [,ɪnə'fɛktɪvnɪs] 
+- n. 无效；不起作用
+
+
+affect [ə'fekt] 
+- vt. 影响；感染；感动；假装 
+- vi. 倾向；喜欢 
+- n. 情感；引起感情的因素
+
+
+affecting [ə'fektɪŋ] 
+- adj. 动人的；感人的
+
+
+affected [ə'fektɪd] 
+- adj. 受到影响的；做作的；假装的
+
+
+affectless [ə'fektlis] 
+- adj. 冷酷无情的；缺乏感情的
+
+
+unaffected [ʌnə'fektɪd] 
+- adj. 不受影响的；自然的；真挚的；不矫揉造作的
+
+
+affection [ə'fekʃ(ə)n] 
+- n. 喜爱，感情；影响；感染
+
+
+affectional [ə'fɛkʃənəl] 
+- adj. 情感上的；爱情的
+
+
+affective [ə'fektɪv] 
+- adj. 情感的；表达感情的
+
+
+affectively [ə'fektɪvlɪ] 
+- adv. 情感地
+
+
+infect [ɪn'fekt] 
+- vt. 感染，传染
+
+
+infected [ɪn'fektɪd] 
+- adj. 被感染的
+
+
+uninfected [ˌʌnɪnˈfɛktɪd] 
+- adj. 未感染的
+
+
+infection [ɪn'fekʃ(ə)n] 
+- n. 感染；传染；影响；传染病
+
+
+coinfection [kəu-ɪn'fekʃ(ə)n] 
+- n. 同时感染；共感染
+
+
+infective [ɪn'fektɪv] 
+- adj. 有传染性的，感染别人的
+
+
+infectious [ɪn'fekʃəs] 
+- adj. 传染的；传染性的；易传染的
+
+
+infectiously [in'fekʃəsli] 
+- adv. 传染地；有感染力地
+
+
+disinfect [dɪsɪn'fekt] 
+- vt. 将…消毒
+
+
+disinfection [,dɪsɪn'fekʃən] 
+- n. 消毒，杀菌
+
+
+disinfectant [dɪsɪn'fekt(ə)nt] 
+- n. 消毒剂 adj. 消毒的
+
+
+office ['ɒfɪs] 
+- n. 办公室；政府机关；官职；营业处
+
+
+officer ['ɒfɪsə] 
+- n. 军官，警官；公务员，政府官员；船长 
+- vt. 指挥
+
+
+official [ə'fɪʃ(ə)l] 
+- adj. 官方的；正式的；公务的 
+- n. 官员；公务员；高级职员
+
+
+officialism [ə'fɪʃəlɪzəm] 
+- n. 官僚作风；文牍主义；（总称）官员
+
+
+officially [ə'fɪʃəlɪ] 
+- adv. 正式地；官方地；作为公务员
+
+
+officialdom [ə'fɪʃəldəm] 
+- n. 官场；官员（总称）；官僚作风
+
+
+unofficial [,ʌnə'fɪʃl] 
+- adj. 非官方的；非正式的
+
+
+unofficially [,ʌnə'fɪʃəli] 
+- adv. 非正式地；非公认地
+
+
+officemate [ə'fɪʃəsmeɪt] 
+- n. 办公伙伴 办公室恋情
+
+
+efficient [ɪ'fɪʃ(ə)nt] 
+- adj. 有效率的；有能力的；生效的
+
+
+efficiently [ɪ'fɪʃəntli] 
+- adv. 有效地；效率高地（efficient的副词形式）
+
+
+efficiency [ɪ'fɪʃ(ə)nsɪ] 
+- n. 效率；效能；功效
+
+
+inefficient [ɪnɪ'fɪʃ(ə)nt] 
+- adj. 无效率的，效率低的；无能的
+
+
+inefficiently [ɪnə'fɪʃəntli] 
+- adv. 无效率地；缺乏能力地
+
+
+inefficiency [,ɪnɪ'fɪʃənsɪ] 
+- n. 效率低；无效率；无能
+
+
+fiction ['fikʃən] 
+- n. 小说；虚构，编造；谎言；虚构或幻想出来的事
+
+
+fictionist ['fikʃənist] 
+- n. 小说家；创作家
+
+
+fictive ['fiktiv] 
+- adj. 虚构的；想象上的；虚伪的
+
+
+fictional ['fikʃənl] 
+- adj. 虚构的；小说的
+
+
+fictionally ['fɪkʃənəli] 
+- adv. 编造地，杜撰地
+
+
+fictionalize ['fikʃənəlaiz] 
+- vt. 使小说化；把…编成小说
+
+
+fictionalized ['fikʃənəlaizd] 
+- adj. 小说化的
+
+
+fictionalization [,fɪkʃənəlɪ'zeʃən] 
+- n. 小说化
+
+
+nonfiction [nɒn'fɪkʃən] 
+- n. 非小说的散文文学
+
+
+non-fictional [nɒn-'fikʃənl] 
+- adj. 非虚构的
+
+
+suffice [sə'faɪs] 
+- vt. 使满足；足够…用；合格 
+- vi. 足够；有能力
+
+
+sufficient [sə'fɪʃ(ə)nt] 
+- adj. 足够的；充分的
+
+
+sufficiently [sə'fɪʃəntlɪ] 
+- adv. 充分地；足够地
+
+
+self-sufficient ['selfsə'fiʃənt] 
+- adj. 自给自足的；极为自负的；过于自信的
+
+
+sufficiency [sə'fɪʃ(ə)nsɪ] 
+- n. 足量，充足；自满
 
 
 
