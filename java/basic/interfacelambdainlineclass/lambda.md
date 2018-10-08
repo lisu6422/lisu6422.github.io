@@ -101,7 +101,7 @@ Arrays .sort (words ,
 
 * 类似Comparator的接口往往有一个特定的用途，而不只是提供一个有指定参数和返回类型的方法。例如：
 
-ArrayList类有一个removelf方法，它的参数就是一个Predicate（谓词），这个接口专门用来传递lambda表达式。 例如， ```javalist.removelf(e -> e == null)```将从一个数组列表删除所有null值。
+ArrayList类有一个removelf方法，它的参数就是一个Predicate（谓词），这个接口专门用来传递lambda表达式。 例如，`list.removelf(e -> e == null)`将从一个数组列表删除所有null值。
 
 
 ### 方法引用
@@ -114,9 +114,9 @@ ArrayList类有一个removelf方法，它的参数就是一个Predicate（谓词
 * Class :: static Method
 * Class :: instanceMethod
 
-1. 在前2种情况中，方法引用等价于提供方法参数的lambda表达式。例如：`System.out::println` 等价于 `x -> System.out.println(x)`；`Math::pow`等价于`(x，y) -> Math.pow(x, y)`。
+1. 在前2种情况中，方法引用等价于提供方法参数的lambda表达式。例如，`System.out::println`等价于 `x -> System.out.println(x)`；`Math::pow`等价于`(x，y) -> Math.pow(x, y)`。
 
-2. 对于第3种情况，第1个参数会成为方法的目标。例如，`String::compareToIgnoreCase` 等同于`(x, y) -> x.compareToIgnoreCase(y)`。
+2. 对于第3种情况，第1个参数会成为方法的目标。例如，`String::compareToIgnoreCase`等同于`(x, y) -> x.compareToIgnoreCase(y)`。
 
 3. notice：如果有多个同名的重栽方法，编译器就会尝试从上下文中找出你指的那一个方法。
 
@@ -150,9 +150,40 @@ List<Person> people = stream.col1ect(Col1ectors.toList());
 可以把`Person[]::new`传入toArray方法：
 
   ```java
-  Person[] people = stream.toArray(Person[]::new):
+  Person[] people = stream.toArray(Person[]::new);
   ```
 toArray方法调用这个构造器来得到一个正确类型的数组，然后填充这个数组并返回。
+
+
+### 变量作用域
+
+* lambda表达式有3个部分：
+1. 一个代码块；
+2. 参数；
+3. 自由变量的值，这是指非参数而且不在代码中定义的变量。
+
+
+* lambda表达式可以捕获外围作用域中变量的值。lambda表达式中捕获的变量必须实际上是最终变量：
+1. 在lambda表达式中，只能引用值不会改变的变量（如果在lambda表达式中改变变量，并发执行多个动作时就会不安全）。
+2. 如果在lambda表达式中引用变量，而这个变量可能在外部改变，这也是不合法的。
+
+
+### 处理lambda表达式
+
+使用lambda表达式的重点是延迟执行（deferred execution）。之所以希望以后再执行代码，有很多原因：
+1. 在一个单独的线程中运行代码；
+2. 多次运行代码；
+3. 在算法的适当位置运行代码(例如：排序中的比较操作) ；
+4. 发生某种情况时执行代码(例如：点击了一个按钮，触发事件) ；
+5. 只在必要时才运行代码；
+
+
+
+
+
+
+
+
 
 
 
