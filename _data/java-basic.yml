@@ -44,3 +44,7 @@
     name: lambda表达式
     subname: lambda表达式
     mini: 2
+  - id: innerclass
+    name: 内部类
+    subname: l内部类
+    mini: 3
