@@ -48,3 +48,12 @@
     name: 内部类
     subname: l内部类
     mini: 3
+
+- id: expectionassertlog
+  name: 异常、断言、日志
+  icon: view_list
+  items:
+  - id: expection
+    name: 异常
+    subname: 异常
+    mini: 1

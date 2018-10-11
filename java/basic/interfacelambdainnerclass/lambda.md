@@ -2,7 +2,7 @@
 layout: book
 title: lambda表达式
 java: basic
-group: interfacelambdainlineclass
+group: interfacelambdainnerclass
 version: 1.0
 ---
 

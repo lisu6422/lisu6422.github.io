@@ -212,7 +212,6 @@ List<Person> personSortedList = persons.stream().sorted(Comparator.comparing(Per
 * 找出最大、最小值
 
 ```java
-
 lists.stream().min(Integer::compareTo).ifPresent(System.out::println);
 
 lists.stream().max(Integer::compareTo).ifPresent(System.out::println);

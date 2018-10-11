@@ -2,7 +2,7 @@
 layout: book
 title: 接口
 java: basic
-group: interfacelambdainlineclass
+group: interfacelambdainnerclass
 version: 1.0
 ---
 
