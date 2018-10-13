@@ -57,3 +57,11 @@
     name: 异常
     subname: 异常
     mini: 1
+  - id: assert
+    name: 断言
+    subname: 断言
+    mini: 2
+  - id: log
+    name: 日志
+    subname: 日志
+    mini: 3
