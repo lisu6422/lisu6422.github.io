@@ -13,6 +13,17 @@ version: 1.0
 2. spring-boot-starter启动器包含spring-boot-starter-logging启动器，并集成了slf4j日志抽象及Logback日志框架；
 3. 无论使用哪种日志框架，Spring Boot都支持配置将日志输出到控制台或者文件中。
 
+Spring Boot默认使用Logback日志框架，并用INFO级别输出到控制台。
+日志输出内容：
+
+- 时间日期：精确到毫秒
+- 日志级别：ERROR, WARN, INFO, DEBUG or TRACE
+- 进程ID
+- 分隔符：— 标识实际日志的开始
+- 线程名：方括号括起来（可能会截断控制台输出）
+- Logger名：通常使用源代码的类名
+- 日志内容
+
 
 常用日志框架： log4j，Logging，commons-logging，slf4j，logback；
 - commons-loggin，slf4j 只是一种日志抽象门面，不是具体的日志框架；
@@ -32,6 +43,13 @@ import org.slf4j.LoggerFactory;
  
 private static final Logger logger = LoggerFactory.getLogger(clazz);  
 logger.info(message);
+```
+
+也可以使用lombok注解：
+```java
+@slf4j
+
+log.info(message);
 ```
 
 ### 属性配置日志
@@ -63,3 +81,5 @@ Logback	                      logback-spring.xml, logback-spring.groovy, logback
 Log4j2	                      log4j2-spring.xml or log4j2.xml
 JDK (Java.Util.Logging)	      logging.properties
 ```
+
+### 
