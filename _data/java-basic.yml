@@ -65,3 +65,7 @@
     name: 日志
     subname: 日志
     mini: 3
+  - id: SpringBootLogIntegrated
+    name: SpringBoot日志集成
+    subname: SpringBoot日志集成
+    mini: 4
