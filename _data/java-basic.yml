@@ -69,3 +69,12 @@
     name: SpringBoot日志集成
     subname: SpringBoot日志集成
     mini: 4
+
+- id: generic-programming
+  name: 范型程序设计
+  icon: view_list
+  items:
+  - id: genericusage
+    name: 范型的使用
+    subname: 范型的使用
+    mini: 1
