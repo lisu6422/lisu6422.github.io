@@ -47,3 +47,81 @@ init() -> service() -> destory()
 4. 服务器销毁Servlet
 
    服务器在销毁Servlet之前会调用Servlet的`destory()`方法;
+
+
+## 实现Servlet的方式
+
+Servlet是一个接口，一般情况下不需要直接实现 Servlet，而是继承它的子类（如：GenericServlet、HttpServlet），并重写相关的方法。
+
+### 实现Servlet的三种方式：
+* 实现javax.servlet.Servlet接口；
+* 继承javax.servlet.GenericServlet类
+* 继承javax.servlet.HttpServlet类；（一般采用这种方式）
+
+ 三者的关系：GenericServlet是Servlet接口的实现类；HttpServlet类是GenericServlet类的子类，它提供了对HTTP请求的支持。
+
+
+### Servlet接口
+
+```java
+public interface Servlet {
+	public void init(ServletConfig config) throws ServletException;
+	public ServletConfig getServletConfig();
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException;
+	public String getServletInfo();
+	public void destroy();
+}
+```
+
+### GenericServlet
+
+`GenericServlet`是`Servlet`接口的实现类，可以通过继承`GenericServlet`来编写自己的`Servlet`。
+```java
+public abstract class GenericServlet implements Servlet, ServletConfig, java.io.Serializable {......}
+```
+
+### HttpServlet
+
+HttpServlet类是GenericServle的子类，它提供了对HTTP请求的特殊支持，所以通常可以通过继承HttpServlet来实现自定义的Servlet。
+
+HttpServlet覆盖了service方法，并把service的两个参数ServletRequest和ServletResponse强转成了HttpServletRequest和HttpServletResponse；
+
+HttpServlet的`service(HttpServletRequest,HttpServletResponse)`方法会去判断当前请求的HTTP Method，如果是GET（或其他）请求，就会去调用本类的doGet()（或其他）方法，因此需要在子类中覆盖doGet()、doPost()或其他方法。
+
+
+## Servlet配置
+
+Servlet的配置有两种方法：
+
+- 通过web.xml配置文件
+- 使用注解@WebServlet(name=””, urlPatterns=””)
+
+### web.xml
+
+在web.xml文件中设置servlet以及servlet与URL的映射：
+
+```xml
+<servlet>
+    <servlet-name>test-servlet</servlet-name>
+    <servlet-class>com.demo.TestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>test-servlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+</servlet-mapping>
+
+```
+
+servlet和servlet-mapping中的servlet-name必须相同。
+
+### @WebServlet
+
+在Java5以后，可以通过注解直接在servlet类注解配置信息，而不需要通过web.xml进行配置。
+
+```java
+@WebServlet(name="testServlet", urlPatterns={"/test"})
+public class TestServlet extends HttpServlet {
+    ......
+}
+```
