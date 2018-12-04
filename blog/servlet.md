@@ -125,3 +125,21 @@ public class TestServlet extends HttpServlet {
     ......
 }
 ```
+
+## Servlet过滤器
+当给定的URL被访问时，Servlet过滤器会对请求进行预处理，并且会在Servlet调用前被调用。使用过滤器的场景：执行校验、日志等不需要与用户交互的后台服务。
+
+- Servlet过滤器必须实现javax.servlet.Filter接口。
+
+```java
+public interface Filter {
+    public void init(FilterConfig filterConfig); 
+
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain); //用来实现逻辑任务
+    
+    public void destroy();
+}
+```
+
+- 配置过滤器
+使用@WebFilter注解，或在web.xml文件中使用`<filter>`和`<filter-mapping>``注册。
