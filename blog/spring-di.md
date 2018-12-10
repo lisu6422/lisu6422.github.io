@@ -6,13 +6,12 @@ group: expectionassertlog
 version: 1.0
 ---
 
-# Spring 依赖注入
+## Spring 依赖注入
 
 Spring的依赖注入功能可以有效的帮助开发人员来管理容器中的Bean的依赖关系。
 
-## 准备
 
-定义以下类，用于演示依赖注入
+定义Person类
 
 ```java
 package com.spring.di;
@@ -74,7 +73,7 @@ public class DiMain(){
 ```
 
 
-## 基于构造器注入
+### 基于构造器注入
 
 创建`Beans.xml`文件，内容如下：
 
@@ -100,7 +99,7 @@ public class DiMain(){
 Person{name='Xiao Ming', age=18}
 ```
 
-## 基于Setter注入
+### 基于Setter注入
 
 * property
 
@@ -138,7 +137,7 @@ Person{name='Xiao Ming', age=18}
 
 将`Beans.xml`中的内容分别用`property`和`p-namespace`的方式配置后，运行`DiMain`，结果与使用构造器注入相同。
 
-## 注入集合
+### 注入集合
 
 Spring 提供了四种类型的集合的配置元素：```<list>```、 ```<set>```、 ```<map>```、 ```<props>```。
 
@@ -251,7 +250,7 @@ public class CollectionBean {
 </beans>
 ```
 
-## 注入null和空字符串
+### 注入null和空字符串
 
 ```xml
 <bean id="..." class="...">
