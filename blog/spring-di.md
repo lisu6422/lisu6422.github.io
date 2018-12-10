@@ -85,7 +85,7 @@ public class DiMain(){
   xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-  <!-- Definition for textEditor bean -->
+  <!-- Definition for person bean -->
   <bean id="person" class="com.spring.di.Person">
     <constructor-arg type="java.lang.String" value="Xiao Ming"/>
     <constructor-arg type="int" value="18"/>
